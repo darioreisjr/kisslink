@@ -1,0 +1,15 @@
+
+
+.logo {
+    margin-top: 44px;
+    margin-bottom: 28px;
+    color: #FFF;
+    font-size: 54px;
+}
+
+.logo-text{
+    background: linear-gradient(#e18700, #FFd43a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
