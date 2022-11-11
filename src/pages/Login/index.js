@@ -27,7 +27,7 @@ export default function Login() {
     signInWithEmailAndPassword(autenticacao, email, password)
       .then(() => {
         navigate("/admin", { replace: true });
-        toast.success("Bem Vindo de volta", {
+        toast.info("Bem Vindo de volta", {
           position: "top-right",
           autoClose: 1500,
           hideProgressBar: false,
@@ -35,7 +35,7 @@ export default function Login() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "colored",
+          theme: "dark",
         });
       })
       .catch(() => {
@@ -47,7 +47,7 @@ export default function Login() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "colored",
+          theme: "dark",
         });
       });
   }

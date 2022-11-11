@@ -11,6 +11,9 @@ import { FiTrash2 } from "react-icons/fi";
 
 import { bancoDados } from "../../services/firebaseConnection";
 
+import {  toast } from 'react-toastify';
+
+
 import {
   addDoc,
   collection,
@@ -33,7 +36,7 @@ export default function Admin() {
     const linksRef = collection(bancoDados, "links");
     const queryRef = query(linksRef, orderBy("created", "asc"));
 
-    const unsub = onSnapshot(queryRef, (snapshot) => {
+     onSnapshot(queryRef, (snapshot) => {
       let lista = [];
 
       snapshot.forEach((doc) => {
@@ -53,7 +56,17 @@ export default function Admin() {
     event.preventDefault();
 
     if (nameInput === "" || urlInput === "") {
-      alert("atenção: preencha todos os campos!");
+
+      toast.warn('Preencha todos os campos!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
       return;
     }
 
@@ -67,15 +80,43 @@ export default function Admin() {
       .then(() => {
         setNameInput("");
         setUrlInput("");
-        alert("Link cadastrado com Sucesso!");
+        toast.success('Link cadastrado com Sucesso!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       })
       .catch((error) => {
-        alert("ops erro ao salvar o link");
+        alert("");
+        toast.error('Ops!!! erro ao salvar o link', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       });
   }
 
   async function handleDeleteLink(id){
-    alert('deletado com sucesso')
+    toast.success('Link deletado com sucesso!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
     const docRef = doc(bancoDados, "links", id)
     await deleteDoc(docRef)
   }

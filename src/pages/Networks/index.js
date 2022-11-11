@@ -8,28 +8,26 @@ import { MdAddLink } from "react-icons/md";
 import { bancoDados } from "../../services/firebaseConnection";
 import { setDoc, doc, getDoc } from "firebase/firestore";
 
+import { toast } from "react-toastify";
+
 export default function Networks() {
   const [facebook, setFacebook] = useState("");
   const [twitter, setTwitter] = useState("");
   const [instagram, setInstagram] = useState("");
 
   useEffect(() => {
-
-     function loadLinks(){
-        const docRef = doc(bancoDados, "social", "link")
-        getDoc(docRef)
-        .then((snapshot)=>{
-
-            if(snapshot.data() !== undefined) {
-                setFacebook(snapshot.data().facebook)
-                setTwitter(snapshot.data().twitter)
-                setInstagram(snapshot.data().instagram)
-            }
-        })
-        
+    function loadLinks() {
+      const docRef = doc(bancoDados, "social", "link");
+      getDoc(docRef).then((snapshot) => {
+        if (snapshot.data() !== undefined) {
+          setFacebook(snapshot.data().facebook);
+          setTwitter(snapshot.data().twitter);
+          setInstagram(snapshot.data().instagram);
+        }
+      });
     }
 
-    loadLinks()
+    loadLinks();
   }, []);
 
   function handleSave(event) {
@@ -41,10 +39,28 @@ export default function Networks() {
       instagram: instagram,
     })
       .then(() => {
-        alert("Urls salvas com sucesso");
+        toast.success("Urls salvas com sucesso", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
       })
       .catch((error) => {
-        alert("erro ao salvar" + error);
+        toast.error("erro ao salvar " + error, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
       });
   }
 
@@ -58,6 +74,7 @@ export default function Networks() {
         <label className="label">Link do facebook</label>
         <Input
           placeholder="Digite a url do facebook..."
+          type="url"
           value={facebook}
           onChange={(event) => setFacebook(event.target.value)}
         />
@@ -65,6 +82,7 @@ export default function Networks() {
         <label className="label">Link do Twitter</label>
         <Input
           placeholder="Digite a url do Twitter..."
+          type="url"
           value={twitter}
           onChange={(event) => setTwitter(event.target.value)}
         />
@@ -72,6 +90,7 @@ export default function Networks() {
         <label className="label">Link do Instagram</label>
         <Input
           placeholder="Digite a url do instagram..."
+          type="url"
           value={instagram}
           onChange={(event) => setInstagram(event.target.value)}
         />
