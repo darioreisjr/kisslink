@@ -51,6 +51,16 @@
     padding: 14px 8px;
 }
 
+.preview{
+    margin: 0 0 28px 0 ;
+    padding: 4px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .btn-delete{
     border: 1.5px dashed #FFF;
     color: #FFF;
