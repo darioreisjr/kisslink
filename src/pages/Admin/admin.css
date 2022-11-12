@@ -63,11 +63,11 @@
 }
 
 .btn-delete{
-    border: 1.5px dashed #FFF;
     color: #FFF;
     background-color: #000;
-    padding: 4px 8px;
-    border-radius: 2px;
+    padding: 10px 8px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .animate-pop {

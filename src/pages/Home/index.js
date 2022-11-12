@@ -66,7 +66,8 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <h1>Dario Reis</h1>
+      <h1> Dario Reis</h1>
+
       <span>Veja meus links 👇</span>
 
       <main className="links">

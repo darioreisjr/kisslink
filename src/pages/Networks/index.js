@@ -11,6 +11,7 @@ import { setDoc, doc, getDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
 export default function Networks() {
+  const [nomeUsuario, setNomeUsuario] = useState("");
   const [facebook, setFacebook] = useState("");
   const [twitter, setTwitter] = useState("");
   const [instagram, setInstagram] = useState("");
@@ -20,6 +21,7 @@ export default function Networks() {
       const docRef = doc(bancoDados, "social", "link");
       getDoc(docRef).then((snapshot) => {
         if (snapshot.data() !== undefined) {
+          setNomeUsuario(snapshot.data().nomeUsuario)
           setFacebook(snapshot.data().facebook);
           setTwitter(snapshot.data().twitter);
           setInstagram(snapshot.data().instagram);
@@ -34,6 +36,7 @@ export default function Networks() {
     event.preventDefault();
 
     setDoc(doc(bancoDados, "social", "link"), {
+      nomeUsuario: nomeUsuario,
       facebook: facebook,
       twitter: twitter,
       instagram: instagram,
@@ -71,6 +74,14 @@ export default function Networks() {
       <h1 className="title-social"> Suas redes sociais</h1>
 
       <form className="form" onSubmit={handleSave}>
+        <label className="label">Seu Nome</label>
+        <Input
+          placeholder="Digite seu nome..."
+          type="text"
+          value={nomeUsuario}
+          onChange={(event) => setNomeUsuario(event.target.value)}
+        />
+
         <label className="label">Link do facebook</label>
         <Input
           placeholder="Digite a url do facebook..."
@@ -96,7 +107,7 @@ export default function Networks() {
         />
 
         <button type="submit" className="btn-register">
-          Salvar Links <MdAddLink size={24} color="#FFF" />
+          Salvar <MdAddLink size={24} color="#FFF" />
         </button>
       </form>
     </div>
