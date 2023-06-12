@@ -47,9 +47,9 @@
 
 <p align="justify">
   
- Desenvolver uma plataforma web de um portfólio pessoal, para a construção deste projeto foi usado Next.js e TailwindCss.E um projeto que é uma compilação de materiais que exemplificam minhas crenças, habilidades, qualificações, educação, treinamento e experiências. Ele fornece informações sobre minha personalidade e ética de trabalho. Amostras de trabalho e outros detalhes, conforme explicado acima. Está intimamente relacionado ao Currículo Online ou CV.
+ E uma plataforma criada para ser uma opção que pode facilitar a sua vida se você precisa compartilhar muitos links, como todas as suas redes sociais, sem necessidade de listar todos ou em um espaço pequeno, como uma bio do Instagram.
   
-Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygraph que é um CMS de API nativa do GraphQL, para entregar melhores projetos em escala. A criação de projetos com GraphQL CMS permite que criem projetos de alto desempenho com uma experiência de desenvolvedor imbatível e os recursos poderosos.
+Todos os dados dos links, cores e etc. veem do firebase que funciona como um Backend as a Service (BaaS). Nesse sentido, ele oferece diversos recursos e ferramentas que permitem o desenvolvimento simples de aplicações. O Firebase Authentication, por exemplo, oferece uma interação dinâmica entre os usuários.
   
 </p>
 
@@ -57,23 +57,23 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 # Funcionalidades
 
-- [x] **Listagem de Projetos**: Listar os projetos com o uso da API GraphQL.
+- [x] **Listagem dos links**: Poder listar todos os links em uma página dinâmica.
 
-- [x] **Listagem de conhecimentos**: Método para lista tecnologias e a quantidade de anos de experiência.
+- [x] **Links interativos**: Pode clicar e o link levará para outra página.
 
-- [x] **Animações**: Usando Biblioteca de animações Frame Motions.
+- [x] **Página do administrador**: Onde pode cadastrar redes sociais e links que será exibido na página principal.
 
 - [x] **Efeito nos botões**: Criar uma animação ao usuário apresentar foco nos botões.
 
-- [x] **Selecionar projeto**: Criar uma página na aplicação com mais detalhes sobre o projeto selecionado.
+- [x] **Remover Link cadastrado**: Pode apagar link cadastrado.
 
-- [x] **Criar links do projeto**: Links do repósitorio no GitHub e Link do Deploy.
+- [x] **Links dinâmicos**: Todos o Links podem ser criados com cores de background e cores da fonte.
 
-- [x] **Seção Sobre**: Dados básicos sobre a pessoa, tecnologia,icones das redes sociais e foto com botão de contato que leva para o preenchimento do contato .
+- [x] **Area de redes sociais**: Onde você pode cadastrar as redes sociais mais usadas .
 
-- [x] **Seção contato**: Onde pode entrar emcontato mandando mensagem e com integração com o Discord.
+- [x] **Firebase**: Tudo hospedado no Firebase.
 
-- [x] **Dinâmico**: Tudo e controlado por um CMS onde pode se mudar tudo e adicionar mais projetos, tecnologias e experiências.
+- [x] **Autenticação**: Tudo autenticado para uso seguro.
 
 <hr/>
 
