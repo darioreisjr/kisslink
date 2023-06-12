@@ -89,35 +89,33 @@ Todos os dados dos links, cores e etc. veem do firebase que funciona como um Bac
 
 - Manipulação no eixo z com o uso da propriedade `z-index` no css.
 
-- Consumo de api com o uso da lib [axios](https://github.com/axios/axios).
-
-- Conceitos de tipagem no typescript.
+- Javascript
 
 - Uso do conceito de função recursiva.
 
 - Configuração de fonte local.
 
-- Uso de TailwindCss
+- Uso de CSS3
 
-- Uso de CMS Hygraph
+- react-router-dom
 
 - Controle de versionamento
 
-- Deploy na Vercel
+- Deploy na Netlify
 
-- Animação com Framer Motion
+- Firebase Connection
 
-- Discord WebHook
+- Autenticação
 
-- Seo estático e dinâmico
+- Toastify
 
-- Rotas estaticas
+- Router Provider
 
-- Next.js 13
+- ReactJs
 
-- Fetch Api
+- Roteamento
 
-- zod para validação
+- Componetização
 
 <hr/>
 
