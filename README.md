@@ -121,30 +121,26 @@ Todos os dados dos links, cores e etc. veem do firebase que funciona como um Bac
 
 # Resolvendo Problemas :exclamation:
 
-Um dos principais problemas que houve no desenvolvimento do projeto foi a responsividade, mais com o uso do tailwind ficous facil de resolver. Outro problema foi na hora do deploy mais foi por conta da biblioteca de icones que estava com conflito mais na troca de icone importado tudo se resolveu. 
+Um dos principais problemas que houve no desenvolvimento do projeto foi a responsividade, e conexão com o firebase. 
 
 <hr/>
 
 # Tarefas em aberto
 
-:memo: Dark Mode 
-
-:memo: Menu responsivo drawer
-
-:memo: Adiciona página de Blog 
+:memo: Light Mode 
 
 <hr/>
 
 
 # :rocket: Tecnologias
 
--  [Next.js 13](https://nextjs.org/)
--  [TypeScript](https://www.typescriptlang.org/)
--  [Tailwind](https://tailwindcss.com/)
+-  [React](https://react.dev/)
+-  [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-  [CSS3](https://www.w3schools.com/css/)
 -  [React-Icons](https://react-icons.github.io/react-icons)
--  [Axios](https://github.com/axios/axios)
--  [Framer Motion](https://www.framer.com/motion/)
--  [Hygraph CMS](https://hygraph.com/)
+-  [react-router-dom](https://github.com/axios/axios)
+-  [react-toastify](https://reactrouter.com/en/main)
+-  [firebase](https://firebase.google.com/?hl=pt)
 
 
 #  Instalação e execução
@@ -170,7 +166,7 @@ Faça o `fork` e clone o projeto a partir do seu usuário.
 
 ```bash
 # Clonando projeto
-$ git clone https://github.com/SEU-NOME-DE-USUARIO/portifolio2023.git
+$ git clone https://github.com/SEU-NOME-DE-USUARIO/kisslink.git
 
 # Criando um branch
 $ git branch minha-alteracao
