@@ -7,11 +7,12 @@
 <hr/>
 
 <p align="center">
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=RED&style=for-the-badge"/>
 </p>
 
+
 <p align="center">
-  <img alt="Layout da aplicação" width="100%" src="https://github.com/darioreisjr/portifolio2023/assets/85812823/c28a0523-11f9-4714-8b05-d512f83b86b1" />
+  <img alt="Layout da aplicação" width="100%" src="https://github.com/darioreisjr/kisslink/assets/85812823/bce29fb4-73a2-4a29-af0d-81e581384ead" />
 </p>
 
 <hr/>
